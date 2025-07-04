@@ -10,7 +10,7 @@ if not exist "%EFI_VARS%" (
 
 "%QEMU_PATH%\qemu-system-aarch64.exe" ^
 -machine virt,accel=tcg,highmem=on,gic-version=3 ^
--cpu max ^
+-cpu cortex-a72 ^
 -m 4096 ^
 -smp 2 ^
 -drive if=pflash,file="%EFI_CODE%",format=raw,readonly=on ^
