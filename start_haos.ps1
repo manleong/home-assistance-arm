@@ -9,7 +9,7 @@ if (-Not (Test-Path $EFI_VARS)) {
 
 Start-Process -FilePath "$QEMU_PATH\qemu-system-aarch64.exe" -ArgumentList @(
     "-machine", "virt,accel=tcg,highmem=on,gic-version=3",
-    "-cpu", "cortex-a72",
+    "-cpu", "max",
     "-m", "4096",
     "-smp", "2",
     "-drive", "`"if=pflash,file=$EFI_CODE,format=raw,readonly=on`"",
