@@ -6,7 +6,7 @@ set EFI_VARS=C:\Program Files (x86)\qemu\share\edk2-arm-vars.fd
 
 "%QEMU_PATH%\qemu-system-aarch64.exe" ^
 -machine virt,accel=tcg,highmem=on ^
--cpu cortex-a72 ^
+-cpu max ^
 -m 4096 ^
 -bios "%EFI_CODE%" ^
 -drive if=none,file="%IMAGE_PATH%",format=qcow2,id=hd ^
