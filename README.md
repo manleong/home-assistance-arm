@@ -19,6 +19,7 @@ for HAOS please use **aarch64** version with the image type **qcow2**
 boot is done when the console output
 > 
 > Welcome to Home Assistant
+> 
 > homeassistant login:
 >
 
